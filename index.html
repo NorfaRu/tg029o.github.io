@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norfa - Crash Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка с логотипом и меню аккаунта -->
+  <header>
+    <div class="logo">Norfa</div>
+    <!-- Меню аккаунта -->
+    <div class="account-menu-container">
+      <div class="avatar" id="avatar"></div>
+      <div class="account-menu" id="accountMenu">
+        <div class="menu-item">Профиль</div>
+        <div class="menu-item">Настройки</div>
+        <div class="menu-item">Выход</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной блок игры -->
+  <main>
+    <div class="game-controls">
+      <div class="input-section">
+        <label for="bet">Ставка:</label>
+        <input type="number" id="bet" value="10" min="1">
+        <button id="start">Начать</button>
+      </div>
+      <div class="status-message">
+        <p id="status-message">Начните игру, чтобы проверить удачу!</p>
+      </div>
+    </div>
+
+    <!-- Блок графика -->
+    <div class="graph-container">
+      <canvas id="graphCanvas"></canvas>
+    </div>
+
+    <!-- Блок истории коэффициентов -->
+    <div class="history-container" id="history-container"></div>
+  </main>
+  
+  <!-- Подключаем скрипт -->
+  <script src="script.js"></script>
+</body>
+</html>
+
